@@ -14,14 +14,15 @@ Summary: Additional package to import Eurostat files using LArray
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/larray_eurostat-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/larray_eurostat-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/larray_eurostat-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/larray_eurostat-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/larray_eurostat-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/larray-eurostat-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/larray_eurostat-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/larray_eurostat-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/larray_eurostat/badges/version.svg)](https://anaconda.org/conda-forge/larray_eurostat)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/larray_eurostat/badges/downloads.svg)](https://anaconda.org/conda-forge/larray_eurostat)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-larray_eurostat-green.svg)](https://anaconda.org/conda-forge/larray_eurostat) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/larray_eurostat.svg)](https://anaconda.org/conda-forge/larray_eurostat) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/larray_eurostat.svg)](https://anaconda.org/conda-forge/larray_eurostat) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/larray_eurostat.svg)](https://anaconda.org/conda-forge/larray_eurostat) |
 
 Installing larray_eurostat
 ==========================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
