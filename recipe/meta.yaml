@@ -12,13 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
@@ -34,6 +34,7 @@ about:
   license_family: GPL
   license_file: LICENSE
   summary: "Additional package to import Eurostat files using LArray"
+  dev_url: https://github.com/larray-project/larray_eurostat
 
 extra:
   recipe-maintainers:
