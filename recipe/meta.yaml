@@ -1,6 +1,6 @@
 {% set name = "larray_eurostat" %}
-{% set version = "0.30" %}
-{% set sha256 = "434451a2494521aecf09120654ed6fece15511c964c6400783069a19821dbe2e" %}
+{% set version = "0.31" %}
+{% set sha256 = "2793bb66d729f81320e982d52fdea378ed5f154ca267ff48ae59bf6a7e485be7" %}
 
 package:
   name: {{ name|lower }}
