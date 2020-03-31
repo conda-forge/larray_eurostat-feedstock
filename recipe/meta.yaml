@@ -1,6 +1,6 @@
 {% set name = "larray_eurostat" %}
-{% set version = "0.31" %}
-{% set sha256 = "2793bb66d729f81320e982d52fdea378ed5f154ca267ff48ae59bf6a7e485be7" %}
+{% set version = "0.32.2" %}
+{% set sha256 = "32cfaf522151cea0ce3ebe5706b8128547b9d29156180d5cdc13b569b315d8de" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: "Additional package to import Eurostat files using LArray"
+  summary: Additional package to import Eurostat files using LArray
 
 extra:
   recipe-maintainers:
