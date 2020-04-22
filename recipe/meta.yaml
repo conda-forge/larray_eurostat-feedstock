@@ -1,24 +1,22 @@
-{% set name = "larray_eurostat" %}
-{% set version = "0.31" %}
-{% set sha256 = "2793bb66d729f81320e982d52fdea378ed5f154ca267ff48ae59bf6a7e485be7" %}
+{% set version = "0.32.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: larray_eurostat
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/larray-project/larray_eurostat/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 32cfaf522151cea0ce3ebe5706b8128547b9d29156180d5cdc13b569b315d8de
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
@@ -30,10 +28,11 @@ test:
 
 about:
   home: http://github.com/larray-project/larray_eurostat
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: "Additional package to import Eurostat files using LArray"
+  dev_url: http://github.com/larray-project/larray_eurostat
 
 extra:
   recipe-maintainers:
