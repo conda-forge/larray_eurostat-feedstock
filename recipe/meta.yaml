@@ -1,4 +1,4 @@
-{% set version = "0.34.2" %}
+{% set version = "0.34.3" %}
 
 package:
   name: larray_eurostat
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/larray-project/larray_eurostat/archive/{{ version }}.tar.gz
-  sha256: 685eb7c333083c26d806fb27805e6898f0525e1fda389e3494e050e9214a476e
+  sha256: 957591c2e47dcb67f264724d3805beefefabb42f2ec5fd363f03d1a6e202ad3c
 
 build:
   noarch: python
